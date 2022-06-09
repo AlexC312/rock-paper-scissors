@@ -45,3 +45,16 @@ function playRound(playerSelection, computerSelection) {
   else
     return 'Invalid choice!!!';
 }
+
+function game() {
+
+  for (let i = 0; i < 5; i++) {
+    let playerChoice = prompt('Choose Rock, Paper or Scissors');
+    let computerChoice = computerPlay();
+
+    let result = playRound(playerChoice, computerChoice);
+    console.log(result);
+  }
+}
+
+game();
